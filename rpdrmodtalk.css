@@ -2690,7 +2690,7 @@ body:not(.loggedin) .side:before {
     top: 425px;
     height: 300px;
     width: 300px;
-    z-index: 99;
+    z-index: 0;
 }
 .comments-page.res-navTop input[name=uh] ~a:after,
 .comments-page input[name=uh] ~a:after {
@@ -5368,17 +5368,28 @@ body
 	content: ' (Monét X Change)';
 	color: #f42f63;
 }
-.flair
-{
+.flair-plain:before { 
+	content: normal; 
+}
+.flair {
 	vertical-align: middle;
     cursor: default;
     padding: 0;
     border: 0;
-    background: url(%%s10flairs05%%) no-repeat -9999px;
+    background: url(%%s10flairs06%%) no-repeat -9999px;
     text-indent: -9999em;
     white-space: nowrap;
 }
-
+.flair-plain {
+	font-size: 1em;
+    color: #a6d7f7;
+    padding: 2px 4px;	
+    background-color: #121212;
+    border-radius: 3px;
+    font-weight: bold;
+    border: 1px solid #a6d7f7;
+    text-indent: 0;
+}
 .flair-zaquaria {
     background-position: -0px -5px;
     width: 97px;
@@ -5543,17 +5554,17 @@ body
     width: 118px;
     height: 34px;
 } 
-.flair-betty {
+.flair-justmikeyo {
     background-position: 0 -1137px;
     width: 116px;
     height: 34px;
 }
-.flair-ross {
+.flair-nothingsmaan {
     background-position: 0 -1174px;
     width: 138px;
     height: 34px;
 }
-.flair-willam {
+.flair-phedre {
     background-position: -4px -1212px;
     width: 132px;
     height: 33px;
@@ -5646,6 +5657,11 @@ body
     background-position: -2px -1460px;
     width: 87px;
     height: 26px;
+}
+.flair-cat {
+    background-position: -2px -1645px;
+    width: 128px;
+    height: 34px;
 }
 .spoiler-stamp {
 	color: #a6d7f7;
